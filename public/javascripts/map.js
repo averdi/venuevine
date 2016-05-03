@@ -5,14 +5,14 @@ function addMarker(map, myLatLng){
   new google.maps.Marker({
     map: map,
     position: myLatLng,
-    icon: 'images/rsz_guitar-pick.png'
+    icon: 'images/rsz_1rsz_guitar-pick.png'
   });
 }
 
 function initMap() {
   var myLatLng = {lat: 30.262565, lng: -97.727010}
 
-  var map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: myLatLng});
+  var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: myLatLng});
   var geocoder = new google.maps.Geocoder;
   geocoder.geocode({'address': 'Austin'}, function(results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
@@ -38,7 +38,7 @@ function initMap() {
   });
 
 
-  var image = 'images/rsz_guitar-pick.png';
+  var image = 'images/rsz_1rsz_guitar-pick.png';
   var marker = new google.maps.Marker({
     position: (map, {lat: venue.lat, lng: venue.lng}),
     map: map,
