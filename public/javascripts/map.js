@@ -4,7 +4,8 @@ $(function() {
 function addMarker(map, myLatLng){
   new google.maps.Marker({
     map: map,
-    position: myLatLng
+    position: myLatLng,
+    icon: 'images/rsz_guitar-pick.png'
   });
 }
 
@@ -16,7 +17,9 @@ function initMap() {
   geocoder.geocode({'address': 'Austin'}, function(results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
       map.setCenter(results[0].geometry.location);
+      // test
       // addMarker(map, {lat: 30.262565, lng: -97.727010});
+
 
       // AJAX to get lats and lngs from list of venues
       $.ajax({
@@ -26,6 +29,26 @@ function initMap() {
       .done(function(venues) {
           venues.forEach(function(venue){
             addMarker(map, {lat: venue.lat, lng: venue.lng});
+
+            // console.log(venue.name);
+            var contentString = '<h2>' + venue.name + '</h2>' + venue.address + '<div class="bookingContact"><h3>Booking Contact: </h3>' + '<p>' + venue.contact + '</p></div>' + '<h3>email: </h3>' + venue.email + '<h3>Phone: </h3>' + venue.phone + '<h3>Website: </h3>' + '<a href="' + venue.website + '" target="_blank">' + venue.name + '</a>';
+      var infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 220
+  });
+
+
+  var image = 'images/rsz_guitar-pick.png';
+  var marker = new google.maps.Marker({
+    position: (map, {lat: venue.lat, lng: venue.lng}),
+    map: map,
+    icon: image
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+
           });
       });
       // end AJAX

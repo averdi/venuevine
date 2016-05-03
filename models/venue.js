@@ -5,7 +5,7 @@ var venueSchema = new mongoose.Schema({
   address: String,
   contact: String,
   email: String,
-  phone: Number,
+  phone: String,
   website: String,
   lat: Number,
   lng: Number,
