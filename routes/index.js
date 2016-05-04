@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var Venue = require('../models/venue');
-var secrets = require('../secrets');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -16,8 +15,6 @@ router.get('/images', function(req, res, next) {
   });
 
 });
-
-
 
 // /images
 // all images for every venue
