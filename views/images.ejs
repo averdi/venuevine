@@ -1,6 +1,32 @@
-<p> hello </p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Venue Vine</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Hello</h1>
+
 
 <%venue.forEach(function(venue){ %>
-<h5><%= venue.name %></h5>
-<img src="<%=venue.imageURL %>" alt="venue" width="300"/>
+
+<ul class="img-list">
+  <li>
+    <a href="http://www.google.com">
+      <img src="<%=venue.imageURL%>" width="200" height="200" />
+      <span class="text-content"><span><%=venue.name%></span></span>
+    </a>
+  </li>
+</ul>
+
 <% }); %>
+
+
+  </body>
+</html>
+
+
+
+
+
+
