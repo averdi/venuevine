@@ -1,6 +1,5 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: rgba(3, 169, 244, 0.18);
 }
 
@@ -19,6 +18,11 @@ html, body {
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
 #map {
   max-height: auto;
   max-width: 100%;
@@ -31,14 +35,18 @@ html, body {
   margin-top: 40px;
 }
 
+.returnToMap {
+  text-align: center;
+  margin: 0 auto;
+}
 
-/*testing*/
+/*on main images view page, images go opaque and display text on mouse-over*/
 
 ul.img-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+
 }
 
 ul.img-list li {
@@ -47,6 +55,7 @@ ul.img-list li {
   margin: 0 1em 1em 0;
   position: relative;
   width: 200px;
+  float: right;
 }
 
 
@@ -81,3 +90,6 @@ span.text-content {
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
+
+
+
