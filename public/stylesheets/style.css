@@ -1,7 +1,10 @@
 body {
   padding: 50px;
   background: rgba(3, 169, 244, 0.18);
+}
 
+.imagesBody {
+  margin: 0 100px;
 }
 
 a {
