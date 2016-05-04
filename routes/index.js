@@ -12,7 +12,17 @@ router.get('/', function(req, res, next) {
 // all images for every venue
 // html loop for venues.all
 router.get('/images', function(req, res, next) {
-  Venue.find({}, function(err, venue) {
+  // is there a district in the query string?
+  // req.query.district
+  var filter = {};
+
+  if (req.query.district) {
+    filter = {
+      district: req.query.district
+    }
+  }
+
+  Venue.find(filter, function(err, venue) {
     if (err) console.log(err);
     res.render('images', {venue: venue});
   });
