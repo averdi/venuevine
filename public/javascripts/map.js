@@ -25,7 +25,7 @@ function initMap() {
       $.ajax({
         method: "GET",
         url: "/venues",
-      })
+      });
       .done(function(venues) {
           venues.forEach(function(venue){
             addMarker(map, {lat: venue.lat, lng: venue.lng});
