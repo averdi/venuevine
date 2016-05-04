@@ -8,20 +8,20 @@
 
 
 <a class="returnToMap" href="/"><h1>Venue Vine</h1></a>
+<div class="imagesParent">
 
-<%venue.forEach(function(venue){ %>
+    <%venue.forEach(function(venue){ %>
 
-<ul class="img-list">
-  <li>
-    <a href="/venues/<%= venue.id %>">
-      <img src="<%=venue.imageURL%>" width="200" height="200" />
-      <span class="text-content"><span><%=venue.name%></span></span>
-    </a>
-  </li>
-</ul>
-
-<% }); %>
-
+    <ul class="img-list">
+      <li>
+        <a href="/venues/<%= venue.id %>">
+          <img src="<%=venue.imageURL%>" width="200" height="200" />
+          <span class="text-content"><span><%=venue.name%></span></span>
+        </a>
+      </li>
+    </ul>
+    <% }); %>
+</div>
 
   </body>
 </html>

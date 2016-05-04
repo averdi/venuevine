@@ -5,7 +5,7 @@ function addMarker(map, myLatLng){
   new google.maps.Marker({
     map: map,
     position: myLatLng,
-    icon: 'images/guitar-pick.png'
+    icon: 'http://i.imgur.com/4tAq9f4.png'
   });
 }
 
@@ -38,7 +38,7 @@ function initMap() {
   });
 
 
-  var image = 'images/guitar-pick.png';
+  var image = 'http://i.imgur.com/4tAq9f4.png';
   var marker = new google.maps.Marker({
     position: (map, {lat: venue.lat, lng: venue.lng}),
     map: map,
