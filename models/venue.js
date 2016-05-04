@@ -9,6 +9,8 @@ var venueSchema = new mongoose.Schema({
   website: String,
   lat: Number,
   lng: Number,
+  district: String,
+  imageURL: String,
   created_at: Date,
   updated_at: Date
 });
