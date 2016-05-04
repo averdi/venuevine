@@ -7,6 +7,23 @@
 <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Send <%= venue.name %> an email Here</a>
 
 
+ <h4>Gigged at <%=venue.name%> before? Anonymously tell us about your experience below</h4>
+
+ <form action="/venues/<%=venue._id%>/comments" method="post">
+      Title:<br>
+      <input type="text" name="title"><br>
+      Content:<br>
+      <input type="text" name="content"><br><br>
+      <input type="submit" value="Tell us about your experience with this venue!">
+    </form>
+
+
+ <% comments.forEach(function(comment){ %>
+      <h5><%= comment.title %></h5>
+      <p> <%= comment.comment %></p>
+      <p> <%= comment.created_at %> </p>
+    <% }) %>
+
 
 <a class="returnToMap" href="/"><h1>Back to Map</h1></a>
 

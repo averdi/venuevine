@@ -8,6 +8,9 @@ router.get('/', function(req, res, next) {
 
 });
 
+// /images
+// all images for every venue
+// html loop for venues.all
 router.get('/images', function(req, res, next) {
   Venue.find({}, function(err, venue) {
     if (err) console.log(err);
@@ -16,13 +19,9 @@ router.get('/images', function(req, res, next) {
 
 });
 
-// /images
-// all images for every venue
-// html loop for venues.all
-
-// /images/:neighborhood
+// /images/:district
 // /images/downtown
-// req.params.neighborhood
+// req.params.district
 
 
 
