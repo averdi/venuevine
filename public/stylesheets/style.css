@@ -244,3 +244,38 @@ h4 span:hover {
   display: flex;
   align-items: stretch;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .imagesBody{
+    padding: 0 15px;
+    margin: 0;
+  }
+  .img-list{
+    display: block;
+  }
+    ul.img-list li {
+     width: 100%;
+     height: auto;
+     display: block;
+     margin: 1em auto;
+     max-height: 400px;
+    }
+
+    .venueMenu a {
+      font-size: 40px;
+      width: 100%;
+    }
+
+    .img-list img{
+      margin-left: 0;
+    }
+
+    span.text-content{
+      width: 100%;
+      height: auto;
+      font-size: 40px;
+      padding: 10px 0;
+      opacity: 1
+    }
+}
