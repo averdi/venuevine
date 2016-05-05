@@ -34,7 +34,8 @@ letter-spacing: 5px;
 h4 {
  /* font-family: 'Poiret One', sans-serif;*/
   text-align: center;
-  font-family: 'Pacifico', cursive;
+ font-family: 'Reenie Beanie', cursive;
+ font-weight: 100;
 }
 
 hr {
@@ -81,7 +82,7 @@ hr {
 }
 
 .returnToMap {
-  color: #636161;
+  color: #E80F0F;
 }
 
 /*on main images view page, images go opaque and display text on mouse-over*/
@@ -108,6 +109,7 @@ span.text-content span {
   text-align: center;
   vertical-align: middle;
   font-family: 'Poiret One', sans-serif;
+  font-weight: bolder;
 }
 
 
@@ -139,7 +141,7 @@ span.text-content {
 
 h4 span {
       margin-bottom: 25px;
-      font-size: 25px;
+      font-size: 34px;
 }
 
 h4 span:hover {
@@ -153,7 +155,14 @@ h4 span:hover {
 .fancy span {
   display: inline-block;
   position: relative;
+ font-weight: 700;
 }
+
+.fancy span:hover {
+  color: darkblue;
+}
+
+
 .fancy span:before,
 .fancy span:after {
   content: "";
@@ -162,7 +171,7 @@ h4 span:hover {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   top: 0;
-  width: 519px;
+  width: 499px;
 }
 .fancy span:before {
   right: 100%;

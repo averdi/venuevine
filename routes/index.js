@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
 
 });
 
-// /images
 // all images for every venue
 // html loop for venues.all
 router.get('/images', function(req, res, next) {
@@ -28,11 +27,5 @@ router.get('/images', function(req, res, next) {
   });
 
 });
-
-// /images/:district
-// /images/downtown
-// req.params.district
-
-
 
 module.exports = router;
