@@ -231,10 +231,6 @@ h4 span:hover {
 
 .bookingInfo {
   border: 2px solid black;
-/*  display: table-cell;
-  float: right;*/
-  /*vertical-align: top;
-  vertical-align: bottom;*/
   margin-left: 30px;
   width: 45%;
   padding: 15px;
@@ -248,6 +244,24 @@ h4 span:hover {
   display: flex;
   align-items: stretch;
 }
+
+/*show page shenanigans*/
+
+.commentsBox {
+  padding: 15px;
+}
+
+.comments {
+  padding: 15px;
+  background: rgba(3,169,244,.18);
+  border-radius: 25px;
+  width: 80%;
+  margin: 20px;
+  text-align: center;
+}
+
+
+/*media queries*/
 
 @media only screen and (max-width: 600px) {
 
