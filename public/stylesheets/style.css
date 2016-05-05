@@ -106,8 +106,12 @@ ul.img-list li {
   margin: 0 1em 1em 0;
   position: relative;
   width: 200px;
+  overflow: hidden;
 }
 
+ul.img-list li img{
+  height: 100%;
+}
 
 
 span.text-content span {
@@ -188,3 +192,51 @@ h4 span:hover {
   margin-left: 15px;
 }
 
+
+/*venue show page*/
+
+.venueName {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Poiret One', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.venueContainer{
+  display: inline-block;
+  border: 2px solid black;
+  padding: 3px 3px 0px 3px;
+  width: 45%;
+}
+.venueImage {
+  width: 100%;
+
+
+/*display: inherit; if I want img to center*/
+}
+
+.blackFont {
+  color: black;
+}
+
+.bookingInfo {
+  border: 2px solid black;
+/*  display: table-cell;
+  float: right;*/
+  /*vertical-align: top;
+  vertical-align: bottom;*/
+  margin-left: 30px;
+  width: 45%;
+  padding: 15px;
+}
+
+.bookingInfo *{
+  margin: 0;
+}
+
+.picBookingParent {
+  display: flex;
+  align-items: stretch;
+}

@@ -1,31 +1,53 @@
-<h1><%= venue.name %></h1>
+<!DOCTYPE html>
+<html>
+   <head>
+          <title>Venue Vine</title>
+          <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Reenie+Beanie|Poiret+One' rel='stylesheet' type='text/css'>
+          <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body class="imagesBody">
+      <h1 class="venueName"><%= venue.name %></h1>
 
-<img src="<%= venue.imageURL %>" alt="venue">
+  <a class="returnToMap" href="/map"><h4 class="fancy"><span>Return to Map</span></h4></a>
+
+<div class="picBookingParent">
+  <div class="venueContainer">
+    <img class="venueImage" src="<%= venue.imageURL %>" alt="venue">
+  </div>
+  <div class="bookingInfo">
+      <h2>Booking Info</h2>
+      <h4>Address:</h4><p><%= venue.address %></p>
+      <h4>Booker:</h4><p><%= venue.contact %></p>
+      <h4>Email:</h4><p><%= venue.email %></p>
+      <h4>Phone:</h4><p><%= venue.phone %></p>
+      <h4>Website:</h4><p><%= venue.website %></p>
+  </div>
+
+</div>
+
+      <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Send <%= venue.name %> an email Here</a>
 
 
+       <h4>Gigged at <%=venue.name%> before? Anonymously tell us about your experience below</h4>
 
-<a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Send <%= venue.name %> an email Here</a>
-
-
- <h4>Gigged at <%=venue.name%> before? Anonymously tell us about your experience below</h4>
-
- <form action="/venues/<%=venue._id%>/comments" method="post">
-      Title:<br>
-      <input type="text" name="title"><br>
-      Content:<br>
-      <input type="text" name="content"><br><br>
-      <input type="submit" value="Tell us about your experience with this venue!">
-    </form>
+       <form action="/venues/<%=venue._id%>/comments" method="post">
+            Title:<br>
+            <input type="text" name="title"><br>
+            Content:<br>
+            <input type="text" name="content"><br><br>
+            <input type="submit" value="Tell us about your experience with this venue!">
+        </form>
 
 
- <% comments.forEach(function(comment){ %>
-      <h5><%= comment.title %></h5>
-      <p> <%= comment.comment %></p>
-      <p> <%= comment.created_at %> </p>
-    <% }) %>
+       <% comments.forEach(function(comment){ %>
+            <h5><%= comment.title %></h5>
+            <p> <%= comment.comment %></p>
+            <p> <%= comment.created_at %> </p>
+        <% }) %>
 
 
-<a class="returnToMap" href="/map"><h1>Back to Map</h1></a>
+      <a class="returnToMap" href="/map"><h1>Back to Map</h1></a>
 
-<a class="returnToMap" href="/"><h3>Main Venues Listing Page</h3></a>
-
+      <a class="returnToMap" href="/"><h3>Main Venues Listing Page</h3></a>
+  </body>
+</html>
