@@ -1,6 +1,5 @@
 body {
   padding: 50px;
-  background: rgba(3, 169, 244, 0.18);
 }
 
 .imagesBody {
@@ -24,7 +23,22 @@ html, body {
 
 h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 85px;
+font-family: 'Poiret One', sans-serif;
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 5px;
+
+}
+
+h4 {
+ /* font-family: 'Poiret One', sans-serif;*/
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+hr {
+  margin-bottom: 25px;
 }
 
 #map {
@@ -44,8 +58,30 @@ h1 {
  text-align: center;
 }
 
+.venueMenu a {
+  font-family: 'Limelight', sans-serif;
+  color: #636161;
+  padding: 0 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.venueMenu a:hover {
+  font-size: 15px;
+  color: black;
+  padding: 0 5px;
+}
+
+.venueMenu {
+  text-align: center;
+}
+
 .img-list {
   display: inline-block;
+}
+
+.returnToMap {
+  color: #636161;
 }
 
 /*on main images view page, images go opaque and display text on mouse-over*/
@@ -71,6 +107,7 @@ span.text-content span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  font-family: 'Poiret One', sans-serif;
 }
 
 
@@ -80,7 +117,7 @@ ul.img-list li:hover span.text-content {
 
 
 span.text-content {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   color: black;
   font-weight: 700;
   font-size: 25px;
@@ -98,5 +135,41 @@ span.text-content {
   transition: opacity 500ms;
 }
 
+/*css for main page double lines next to map link*/
 
+h4 span {
+      margin-bottom: 25px;
+      font-size: 25px;
+}
+
+h4 span:hover {
+  color:black;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 519px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 

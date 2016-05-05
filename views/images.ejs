@@ -2,23 +2,31 @@
 <html>
   <head>
     <title>Venue Vine</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+       <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body class="imagesBody">
 
 
-<a class="returnToMap" href="/"><h1>Venue Vine</h1></a>
+<h1>Venue Vine</h1>
+<a class="returnToMap" href="/"><h4 class="fancy"><span>Map of All Venues</span></h4></a>
 
-<a href="/images">all</a>
-<a href="/images/?district=sixth+street">sixth street</a>
-<a href="/images/?district=red+river">red river</a>
-<a href="/images/?district=south+lamar">south lamar</a>
-<a href="/images/?district=other">other</a>
-<a href="/images/?district=south+austin">south austin</a>
-<a href="/images/?district=east+austin">east austin</a>
-<a href="/images/?district=university">university</a>
-<a href="/images/?district=warehouse+and+downtown">warehouse & downtown</a>
-<a href="/images/?district=market">market</a>
+<div class="venueMenu">
+
+    <a href="/images">all</a>
+    <a href="/images/?district=sixth+street">sixth street</a>
+    <a href="/images/?district=red+river">red river</a>
+    <a href="/images/?district=south+lamar">south lamar</a>
+    <a href="/images/?district=south+austin">south austin</a>
+    <a href="/images/?district=east+austin">east austin</a>
+    <a href="/images/?district=university">university</a>
+    <a href="/images/?district=warehouse+and+downtown">warehouse & downtown</a>
+    <a href="/images/?district=market">market</a>
+    <a href="/images/?district=other">other</a>
+</div>
+<hr>
 
 <div class="imagesParent">
 
@@ -27,14 +35,14 @@
     <ul class="img-list">
       <li>
         <a href="/venues/<%= venue.id %>">
-          <img src="<%=venue.imageURL%>" width="200" height="200" />
-          <span class="text-content"><span><%=venue.name%></span></span>
+          <img id="test" src="<%=venue.imageURL%>" width="200" height="200" />
+          <span class="text-content"><span><%=venue.name%> </span></span>
         </a>
       </li>
     </ul>
     <% }); %>
 </div>
-
+<hr>
 
 
   </body>
