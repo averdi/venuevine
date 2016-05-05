@@ -6,6 +6,10 @@ body {
   margin: 0 100px;
 }
 
+.mapBody {
+  margin: 0 100px;
+}
+
 a {
   color: #00B7FF;
   text-decoration: none;
@@ -247,8 +251,9 @@ h4 span:hover {
 
 @media only screen and (max-width: 600px) {
 
-  body {
-    padding: 0px;
+  .mapBody {
+    padding: 0;
+    margin: 0;
   }
 
   .imagesBody{
