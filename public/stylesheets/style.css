@@ -113,6 +113,9 @@ ul.img-list li img{
   height: 100%;
 }
 
+.img-list img {
+  margin-left: -25%;
+}
 
 span.text-content span {
   display: table-cell;
