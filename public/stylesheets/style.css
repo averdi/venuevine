@@ -52,6 +52,7 @@ hr {
   height: 80%;
   margin: 0 auto;
   margin-top: 40px;
+  border: 2px solid black;
 }
 
 
@@ -83,6 +84,10 @@ hr {
 
 .returnToMap {
   color: #E80F0F;
+}
+
+.hrMargin {
+  margin: 50px 0;
 }
 
 /*on main images view page, images go opaque and display text on mouse-over*/
