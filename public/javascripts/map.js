@@ -31,7 +31,7 @@ function initMap() {
             addMarker(map, {lat: venue.lat, lng: venue.lng});
 
             // console.log(venue.name);
-            var contentString = '<h2><a href="/venues/' + venue._id + '">' + venue.name + '</a></h2>' + venue.address + '<div class="bookingContact"><h3>Booking Contact: </h3>' + '<p>' + venue.contact + '</p></div>' + '<h3>email: </h3>' + venue.email + '<h3>Phone: </h3>' + venue.phone + '<h3>Website: </h3>' + '<a href="http://' + venue.website + '" target="_blank">' + venue.name + '</a>';
+            var contentString = '<h2><a href="/venues/' + venue._id + '">' + venue.name + '</a></h2>' + '<div><h3>Visit Link for Booking Info</h3>' + venue.address;
       var infowindow = new google.maps.InfoWindow({
     content: contentString,
     maxWidth: 220
