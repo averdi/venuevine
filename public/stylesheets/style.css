@@ -295,5 +295,6 @@ h4 span:hover {
     width: 100%;
     margin: 0 auto;
     border: 2px solid black;
+    margin-bottom: 20px;
     }
 }
