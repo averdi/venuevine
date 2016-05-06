@@ -10,6 +10,7 @@ var routes = require('./routes/index');
 var venues = require('./routes/venues');
 
 var app = express();
+var server = app.listen(process.env.PORT || 8080);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
