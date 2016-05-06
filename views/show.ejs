@@ -18,26 +18,30 @@
   </div>
   <div class="bookingInfo">
       <h2>Booking Info</h2>
-      <h4>Address:</h4><p><%= venue.address %></p>
-      <h4>Booker:</h4><p><%= venue.contact %></p>
-      <h4>Email:</h4><p><%= venue.email %></p>
-      <h4>Phone:</h4><p><%= venue.phone %></p>
-      <h4>Website:</h4><p><%= venue.website %></p>
+      <p><%= venue.address %></p>
+      <p><strong>Booking Contact:</strong> <%= venue.contact %></p>
+      <p><%= venue.email %></p>
+      <p><%= venue.phone %></p>
+      <p><%= venue.website %></p>
+       <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Send <%= venue.name %> an email Here</a>
   </div>
 
 </div>
 
-      <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Send <%= venue.name %> an email Here</a>
+<!--  <a class="returnToMap homePageLink" href="/"><h3>Home Page</h3></a> -->
+
+ <hr id="hrSpace">
 
 
-       <h4>Gigged at <%=venue.name%> before? Anonymously tell us about your experience below</h4>
+       <h4 class="commentsInvitation">Gigged at <%=venue.name%> before? Anonymously share your experiences</h4>
+       <hr>
 
        <form action="/venues/<%=venue._id%>/comments" method="post">
             Title:<br>
-            <input type="text" name="title"><br>
+            <textarea type="text" cols="40" name="title"></textarea><br>
             Content:<br>
-            <input type="text" name="content"><br><br>
-            <input type="submit" value="Tell us about your experience with this venue!">
+            <textarea rows="10" cols="40" type="text" name="content"></textarea><br><br>
+            <input id="formSubmit" type="submit" value="Submit">
         </form>
 
     <div class="commentsBox">
@@ -50,7 +54,6 @@
         <% }) %>
     </div>
 
-      <a class="returnToMap" href="/"><h3>Main Venues Listing Page</h3></a>
       <hr>
   </body>
 </html>
