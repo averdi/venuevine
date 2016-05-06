@@ -19,11 +19,12 @@
   <div class="bookingInfo">
       <h2>Booking Info</h2>
       <p><%= venue.address %></p>
-      <p><strong>Booking Contact:</strong> <%= venue.contact %></p>
+      <p><strong>Contact:</strong> <%= venue.contact %></p>
       <p><%= venue.email %></p>
+        <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Email <%= venue.name %> Here</a>
       <p><%= venue.phone %></p>
-      <p><%= venue.website %></p>
-       <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Send <%= venue.name %> an email Here</a>
+      <a href="<%= venue.website %>"><%= venue.name %> Website</a>
+
   </div>
 
 </div>
@@ -37,10 +38,10 @@
        <hr>
 
        <form action="/venues/<%=venue._id%>/comments" method="post">
-            Title:<br>
-            <textarea type="text" cols="40" name="title"></textarea><br>
-            Content:<br>
-            <textarea rows="10" cols="40" type="text" name="content"></textarea><br><br>
+            <br>
+            <textarea type="text" placeholder="TITLE HERE" cols="40" name="title"></textarea><br>
+            <br>
+            <textarea rows="10" cols="40" placeholder="YOUR EXPERIENCE" type="text" name="content"></textarea><br><br>
             <input id="formSubmit" type="submit" value="Submit">
         </form>
 
