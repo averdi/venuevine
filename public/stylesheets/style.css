@@ -383,6 +383,11 @@ h4 span:hover {
       width: 100%;
     }
 
+   .venueMenu a:hover {
+      color: black;
+      text-decoration: none;
+    }
+
     .img-list img{
       margin-left: 0;
     }
