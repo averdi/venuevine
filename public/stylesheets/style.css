@@ -411,4 +411,8 @@ h4 span:hover {
     border: 2px solid black;
     margin-bottom: 20px;
     }
+
+    .fancy span:before, .fancy span:after {
+    width: 28px;
+}
 }
