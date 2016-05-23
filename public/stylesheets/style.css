@@ -381,6 +381,7 @@ h4 span:hover {
     .venueMenu a {
       font-size: 40px;
       width: 100%;
+      display: table-row;
     }
 
    .venueMenu a:hover {
