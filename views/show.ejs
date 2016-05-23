@@ -21,7 +21,7 @@
       <p><%= venue.address %></p>
       <p><strong>Contact:</strong> <%= venue.contact %></p>
       <p><%= venue.email %></p>
-        <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Email <%= venue.name %> Here</a>
+        <a target=_blank href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Email <%= venue.name %> Here</a>
       <p><%= venue.phone %></p>
       <a href="<%= venue.website %>"><%= venue.name %> Website</a>
 
