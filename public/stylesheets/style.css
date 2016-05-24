@@ -422,13 +422,14 @@ h4 span:hover {
 }
 
 .venueContainer {
-  width: 99%;
+  width: 98%;
 }
 
 .bookingInfo {
   margin-left: 0px;
   margin-top: 15px;
-  width: 94%;
+  width: 100%;
+  padding: 0 0 10px 0;
 }
 
 }
