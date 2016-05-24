@@ -415,4 +415,20 @@ h4 span:hover {
     .fancy span:before, .fancy span:after {
     width: 28px;
 }
+
+  .picBookingParent {
+    display: block;
+  align-items: stretch;
+}
+
+.venueContainer {
+  width: 99%;
+}
+
+.bookingInfo {
+  margin-left: 0px;
+  margin-top: 15px;
+  width: 94%;
+}
+
 }

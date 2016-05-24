@@ -13,21 +13,21 @@
   <a class="returnToMap" href="/map"><h4 class="fancy"><span>Return to Map</span></h4></a>
 
 <div class="picBookingParent">
-  <div class="venueContainer">
-    <img class="venueImage" src="<%= venue.imageURL %>" alt="venue">
-  </div>
-  <div class="bookingInfo">
-      <h2>Booking Info</h2>
-      <p><%= venue.address %></p>
-      <p><strong>Contact:</strong> <%= venue.contact %></p>
-      <p><%= venue.email %></p>
-        <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Email <%= venue.name %> Here</a>
-      <p>Phone: <%= venue.phone %></p>
-      <a target=_blank href="<%= venue.website %>"><%= venue.name %> Website</a>
+    <div class="venueContainer">
+      <img class="venueImage" src="<%= venue.imageURL %>" alt="venue">
+    </div>
+      <div class="bookingInfo">
+          <h2>Booking Info</h2>
+          <p><%= venue.address %></p>
+          <p><strong>Contact:</strong> <%= venue.contact %></p>
+          <p><%= venue.email %></p>
+            <a href="mailto:<%=venue.email%>?Subject=Hi, I'm looking to book a show">Email <%= venue.name %> Here</a>
+          <p>Phone: <%= venue.phone %></p>
+          <a target=_blank href="<%= venue.website %>"><%= venue.name %> Website</a>
 
-  </div>
+      </div>
 
-</div>
+ </div>
 
 <!--  <a class="returnToMap homePageLink" href="/"><h3>Home Page</h3></a> -->
 
